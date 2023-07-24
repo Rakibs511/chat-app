@@ -40,11 +40,11 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="flex min-h-screen flex-col items-center p-24 scroll-smooth">
-      <div className="sticky top-0 min-w-[100vw] backdrop-blur-md flex flex-col items-center">
+    <main className="flex min-h-screen flex-col items-center pb-16 scroll-smooth">
+      <div className="sticky top-0 min-w-full backdrop-blur-md flex flex-col items-center">
         <h1 className="text-5xl p-3">🟢 Live Chat</h1>
       </div>
-      <div className="flex space-x-2 fixed bottom-5">
+      <div className="flex justify-center space-x-2 fixed bottom-0 pb-3 min-w-full backdrop-blur-md">
         <input
           className="text-black  p-3  rounded-md border-r-4"
           type="text"
@@ -73,7 +73,7 @@ export default function Home() {
 
 const Message = ({ content }: { content: string }) => {
   return (
-    <div className="flex justify-start text-left items-center bg-slate-500 h-7 w-fit p-6 rounded-xl mb-3">
+    <div className="flex justify-start text-left items-center bg-slate-500 h-fit w-fit p-6 rounded-xl mb-3">
       <p>{content}</p>
     </div>
   );
